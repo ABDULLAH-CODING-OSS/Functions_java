@@ -7,8 +7,8 @@ public class ma {
 //printSeries(5);
 //        int res=power(10, 3);
 //        System.out.println(res);
-        System.out.println("fact : "+ (fact(3)));
-
+//        System.out.println("fact : "+ (fact(3)));
+        System.out.println("count "+(Count(12)));
     }
 
     // public static void printSeries(int num){
@@ -39,13 +39,13 @@ public class ma {
 //       }
 //         return n;
 //*
- public static int fact(int num ){
- if (num ==0|| num ==1)
-    return 1;
-       return num *fact(num-1);
+// public static int fact(int num ){
+// if (num ==0|| num ==1)
+//    return 1;
+//       return num *fact(num-1);
+//
 
 
- }
 //
 //
 //
@@ -57,20 +57,11 @@ public class ma {
 //
 //
 // *//
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
+public static int Count(int n ) {
+    if (n>1) // or if (n/10==0) return 1
+        return 1 + Count(n / 10);
+         return 1;
+}
 
 }
 
