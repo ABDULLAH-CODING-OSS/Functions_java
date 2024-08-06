@@ -5,8 +5,9 @@ public class ma {
         // 5 4 3 2 1 solution recurssive code
         // debug through stack and recurssive tree
 //printSeries(5);
-        int res=power(10, 3);
-        System.out.println(res);
+//        int res=power(10, 3);
+//        System.out.println(res);
+        System.out.println("fact : "+ (fact(3)));
 
     }
 
@@ -25,13 +26,51 @@ public class ma {
 //
     //n^p=  n * n^p-1
     // power finction using recurssion
-    public static int power(int base, int exponent) {
-        if (exponent > 0)// base condition
-            return base * power(base, exponent - 1);
-             return 1;
+//    public static int power(int base, int exponent) {
+//        if (exponent > 0)// base condition
+//            return base * power(base, exponent - 1);
+//             return 1;
+//
+//    }
+//  n! = n * n-1!;
+//public static int fact(int n){
+//       if (n>1){ // if n==0 || n==1 return n;
+//           return n*fact(n-1);
+//       }
+//         return n;
+//*
+ public static int fact(int num ){
+ if (num ==0|| num ==1)
+    return 1;
+       return num *fact(num-1);
 
-    }
 
+ }
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+// *//
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
 
 }
 
